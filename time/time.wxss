@@ -1,0 +1,126 @@
+/* ewei_shopv2/component/time/time.wxss */
+
+.choic-time {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, #11576d , #072c3b); 
+}
+
+.time-head {
+    position: relative;
+}
+
+.time-day {
+    display: flex;
+    justify-content: space-around;
+}
+
+.time-head .choice-day {
+    color: #92a1a8;
+    font-size: .7rem;
+    text-align: center;
+    margin-bottom: 1.125rem;
+    margin-top: 2rem;
+}
+
+.choice-day .choice {
+    font-size: 1.2rem;
+    margin-bottom: .2rem;
+}
+
+.time-head .week {
+    display: flex;
+    justify-content: space-around;
+    font-size: .8rem;
+    color: #fff;
+    border-bottom: 1px solid #436775;
+    padding-bottom: .5rem;
+}
+
+.time-head .close {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2.4rem;
+    height: 2.4rem;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAATtJREFUaAXtmOEKgzAMhGX4jHtDf+wZ98MlolJKTZvmCitcoTjX5PLlqghdFg46QAfoAB2gA3RgEgf2fV9lbjLfaGTVPLVXtPahJ+IK/5Gp4ysT1oRqnZpyOWrgmxBhdT4dkCZEMIW/9Df4LjwUCjUxQtNsHFkQqWVC54uIwgiNnMt1HwGI5Loga8E9ID05NY7QugfIExuC8ia3gLXEeOtC4y1Aaw0KERUzQPVbkY7QtyPKaeYLZemrOgf81ZnRxBDnX1dhXsUBw/3rMRqyCxDzH+AVWGc6/q8JoSu9vAeotQZxLirSAtgSE+XoyveAeWK7YLxJPUA9OV6upvgISCS3Ca4WhABAaNQ4i+vIwkitImz+54iCIzRz7vteik1/rDL3wZZuhezCvEeL97PEH3SADtABOkAH6ADOgR9Y1eTxhZ+/3QAAAABJRU5ErkJggg==') no-repeat center;
+    background-size: 1.2rem 1.2rem;
+}
+
+.time-head .clear {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0 .75rem;
+    height: 2.4rem;
+    font-size: .8rem;
+    line-height: 2.4rem;
+    color: #fff;
+}
+
+.time-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.time-content .month-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0.25rem;
+    color: #fff;
+}
+
+.time-content .day {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.time-content .day text {
+    display: block;
+    width: 14.28%;
+    height: 2.675rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #436675;
+    line-height: 2.675rem;
+}
+
+.time-foot {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3.8rem;
+    border-top: 1px solid #436775;
+    z-index: 99;
+}
+
+.time-foot-wrapper {
+    display: flex;
+    height: 100%;
+     justify-content: space-around; 
+    align-items: center;
+    text-align: center;
+}
+
+.time-foot-wrapper .choice-time {
+    font-size: .6rem;
+    color: #cdcdcd;
+}
+
+.time-foot-wrapper button {
+    width: 6.45rem;
+    height: 2.5rem;
+    font-size: .7rem;
+    line-height: 2.5rem;
+    color: #fff;
+    background-color: #91B6B6;
+    border-radius: 4px;
+    margin: 0;
+}

@@ -1,0 +1,5 @@
+.star {
+    display: inline-block;
+    color: #f5a623;
+    margin-right: .3rem;
+}

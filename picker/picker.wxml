@@ -1,0 +1,14 @@
+<view listData="{{listData}}">
+  <view>{{one}}{{two}}{{three}}</view>
+  <picker-view indicator-style="height: 50px;" style="width: 100%; height: 300px;" value="{{value}}" bindchange="bindChange">
+    <picker-view-column>
+      <view wx:for="{{listData}}">{{item.name}}</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{listData[value[0]].list}}">{{item.name}}</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{listData[value[0]].list[value[1]].list}}">{{item.name}}</view>
+    </picker-view-column>
+  </picker-view>
+</view>

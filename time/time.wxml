@@ -1,0 +1,39 @@
+<view wx:if="{{closeOnOff}}" onOff="{{closeOnOff}}" class='choic-time'>
+    <view class='time-head'>
+        <view class='time-day'>
+            <view class='start-day choice-day'>
+                <p class="choice">请选择</p>
+                <text>起租日</text>
+            </view>
+            <view class='end-day choice-day'>
+                <p class="choice">请选择</p>
+                <text>寄回日</text>
+            </view>
+        </view>
+        <view class='week'>
+            <block wx:for="{{week}}" wx:for-item="item" wx:key="item.id">
+                <text>{{item}}</text>
+            </block>
+        </view>
+        <view bindtap='close' class='close'></view>
+        <view class='clear'>清除</view>
+    </view>
+    <view class='time-content'>
+        <scroll-view scroll-y style='height:20rem' scroll-into-view="{{toView}}" scroll-top="{{100}}">
+            <view wx:for="{{3}}" wx:for-item="item" wx:key="item.id">
+                <view class='month-title'>{{index + 1}}</view>
+                <view class='day'>
+                    <block wx:for="{{31}}" wx:for-item="day-item" wx:key="dat-item.id">
+                        <text>{{index + 1}}</text>
+                    </block>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+    <view class='time-foot'>
+        <view class='time-foot-wrapper'>
+            <view class='choice-time'>请选择租赁日期</view>
+            <button>确定租期</button>
+        </view>
+    </view>
+</view>

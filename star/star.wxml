@@ -1,0 +1,7 @@
+<view class='score'>
+    <block wx:for="{{5}}" wx:for-item="star" wx:key="star.id">
+        <span wx:if="{{index+1 <= num}}" class="star full-star">★</span>
+        <span wx:else class="star mpty-star">☆</span>
+    </block>
+    <text>{{num}}</text>
+</view>
